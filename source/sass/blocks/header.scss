@@ -51,6 +51,10 @@
   justify-content: space-between;
 }
 
+.header__logo {
+  margin-left: 4px;
+}
+
 .header__contacts {
   display: flex;
   justify-content: flex-end;
@@ -87,6 +91,15 @@
   font-size: 16px;
   line-height: 18px;
   color: $white;
+
+  &:hover,
+  &:focus {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $max-tablet-width) {
     font-size: 0;
@@ -143,6 +156,16 @@
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $white;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $dark;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $max-tablet-width) {
     display: none;
@@ -239,6 +262,16 @@
   text-align: center;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $max-tablet-width) {
     margin-top: 51px;
