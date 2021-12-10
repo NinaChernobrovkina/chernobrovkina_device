@@ -23,3 +23,50 @@
     overflow: hidden;
   }
 }
+
+.page__bg {
+  background-image: url("../img/main-bg.jpg");
+  background-position-x: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/main-bg@2x.jpg");
+  }
+
+  @media (max-width: $max-tablet-width) {
+    background-image: url("../img/main-bg_tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-bg_tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $max-mobile-width) {
+    background-image: url("../img/main-bg_mobil.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/main-bg_mobil@2x.jpg");
+    }
+  }
+}
+
+.page__advantages {
+  @include center(1220px);
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (max-width: $max-mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.page__about {
+  @include center(1220px);
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @media (max-width: $max-mobile-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
