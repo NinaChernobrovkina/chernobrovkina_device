@@ -7,23 +7,55 @@
 
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/2005_tablet.png");
+    padding: 60px 25px 53px 210px;
+    background-position-x: 0;
+    background-position-y: 55px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    background-image: none;
+    padding: 60px 15px 65px;
   }
 }
 
-.about h3 {
+.about h2 {
   margin: 0 0 18px;
   @include font-roboto;
   font-size: 36px;
   line-height: 51px;
+  color: $grey;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 0 0 24px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin: 0 0 19px;
+    font-size: 28px;
+    line-height: 39px;
+  }
 }
 
 .about p {
   margin: 0 0 22px;
+  color: $grey;
+
+  @media (max-width: $max-mobile-width) {
+    margin: 0 0 44px;
+  }
+}
+
+.about__text-mobile-hidden {
+  @media (max-width: $max-tablet-width) {
+    display: none;
+  }
 }
 
 .about__button {
   display: block;
-  margin-top: 15px;
+  margin-top: 37px;
   border: 1px solid #00B2FF;
   box-sizing: border-box;
   border-radius: 5px;
@@ -37,4 +69,8 @@
   color: $blue;
   padding: 13px;
   width: 180px;
+
+  @media (max-width: $max-mobile-width) {
+    margin-top: -14px;
+  }
 }
