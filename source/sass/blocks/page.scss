@@ -25,26 +25,26 @@
 }
 
 .page__bg {
-  background-image: url("../img/main-bg.jpg");
+  background-image: url("../img/main-bg.png");
   background-position-x: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/main-bg@2x.jpg");
+    background-image: url("../img/main-bg@2x.png");
   }
 
   @media (max-width: $max-tablet-width) {
-    background-image: url("../img/main-bg_tablet.jpg");
+    background-image: url("../img/main-bg_tablet.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-bg_tablet@2x.jpg");
+      background-image: url("../img/main-bg_tablet@2x.png");
     }
   }
 
   @media (max-width: $max-mobile-width) {
-    background-image: url("../img/main-bg_mobil.jpg");
+    background-image: url("../img/main-bg_mobile.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/main-bg_mobil@2x.jpg");
+      background-image: url("../img/main-bg_mobile@2x.png");
     }
   }
 }

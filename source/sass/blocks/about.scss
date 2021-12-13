@@ -19,8 +19,8 @@
 }
 
 .about h2 {
-  margin: 0 0 18px;
   @include font-roboto;
+  margin: 0 0 18px;
   font-size: 36px;
   line-height: 51px;
   color: $grey;
@@ -54,12 +54,12 @@
 }
 
 .about__button {
+  @include font-roboto;
   display: block;
   margin-top: 37px;
-  border: 1px solid #00B2FF;
+  border: 1px solid $blue;
   box-sizing: border-box;
   border-radius: 5px;
-  @include font-roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;

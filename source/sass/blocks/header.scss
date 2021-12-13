@@ -107,7 +107,7 @@
   }
 
   &--mail::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -123,7 +123,7 @@
   }
 
   &--phone::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -140,6 +140,7 @@
 }
 
 .header__contacts-button {
+  @include font-roboto;
   cursor: pointer;
   display: block;
   margin-left: 38px;
@@ -149,7 +150,6 @@
   width: 180px;
   height: 45px;
   text-align: center;
-  @include font-roboto;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -173,9 +173,9 @@
 }
 
 .header__text h1 {
+  @include font-roboto;
   margin-top: 231px;
   margin-bottom: 31px;
-  @include font-roboto;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
@@ -226,7 +226,7 @@
 }
 
 .header__text p::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 66px;
   height: 2px;
@@ -245,6 +245,7 @@
 }
 
 .header__button {
+  @include font-roboto;
   display: block;
   cursor: pointer;
   margin-top: 37px;
@@ -252,10 +253,10 @@
   background-color: $blue;
   border: none;
   border-radius: 5px;
+  padding: 17px 0 14px;
   color: $white;
   width: 407px;
   height: 55px;
-  @include font-roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;

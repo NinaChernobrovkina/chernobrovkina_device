@@ -39,17 +39,17 @@
             <a href="tel:+74950005252" class="header__contacts-link header__contacts-link--phone">+7 (495) 000 52 52</a>
           </li>
         </ul>
-        <button class="header__contacts-button">Заказать звонок</button>
+        <button class="header__contacts-button" type="button">Заказать звонок</button>
       </div>
     </div>
     <div class="header__text">
       <h1>Печатные платы</h1>
       <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
     </div>
-    <button class="header__button">
+    <a class="header__button" href="#form">
       <span class="header__button-text">Получить бесплатную консультацию</span>
       <span class="header__button-text-mobile">Бесплатная консультация</span>
-    </button>
+    </a>
   </div>
 </header>
 <main class="page__main">
@@ -127,6 +127,32 @@
       </ul>
     </div>
   </section>
+  <section class="form" id="form">
+    <div class="form__wrapper">
+      <div class="form__container">
+        <h2>Остались вопросы? Задайте их нам!</h2>
+        <p>Мы проконсультируем Вас бесплатно</p>
+        <form action="https://echo.htmlacademy.ru" class="form__form">
+          <label aria-label="Имя">
+            <input type="text" placeholder="Имя" name="name" required="">
+          </label>
+          <label aria-label="Телефон">
+            <input type="tel" placeholder="Телефон" name="phone" pattern="[+\d\s\-()]+" id="phone" required="">
+          </label>
+          <div class="form__wide">
+            <label aria-label="Ваш вопрос">
+              <textarea placeholder="Ваш вопрос" name="question" required=""></textarea>
+            </label>
+          </div>
+          <button type="submit">Задать вопрос</button>
+          <div class="form__checkbox-wrapper">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree">Я согласен на обработку  персональных данных</label>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 <footer class="footer page__footer">
   <div class="footer__wrapper">
@@ -172,7 +198,7 @@
           <div class="footer__section-title">Разделы сайта</div>
           <!-- footer__section-button--nojs - состояние с отключенным js, кнопки нет -->
           <!-- footer__section-button--open - кнопка для сворачивания -->
-          <button class="footer__section-button footer__section-button--nojs" aria-label="Развернуть / Свернуть"></button>
+          <button class="footer__section-button footer__section-button--nojs" aria-label="Развернуть / Свернуть" type="button"></button>
         </div>
         <!-- footer__section-content--nojs - состояние с отключенным js, контент развернут -->
         <!-- footer__section-content--open - контент развернут -->
@@ -197,7 +223,7 @@
           <div class="footer__section-title">Наш офис</div>
           <!-- footer__section-button--nojs - состояние с отключенным js, кнопки нет -->
           <!-- footer__section-button--open - кнопка для сворачивания -->
-          <button class="footer__section-button footer__section-button--nojs" aria-label="Развернуть / Свернуть"></button>
+          <button class="footer__section-button footer__section-button--nojs" aria-label="Развернуть / Свернуть" type="button"></button>
         </div>
         <!-- footer__section-content--nojs - состояние с отключенным js, контент развернут -->
         <!-- footer__section-content--open - контент развернут -->
@@ -229,6 +255,31 @@
     </div>
   </div>
 </footer>
-<script type="module" src="js/script.js"></script>
+<!-- modal-open - модальное окно открыто -->
+<div class="modal">
+  <div class="modal__box">
+    <button class="modal__close" type="button" aria-label="Закрыть"></button>
+    <h2>Закажите звонок</h2>
+    <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+    <form action="https://echo.htmlacademy.ru" class="modal__form">
+      <label aria-label="Имя">
+        <input type="text" placeholder="Имя" name="name" required="">
+      </label>
+      <label aria-label="Телефон">
+        <input type="tel" placeholder="Телефон" name="phone" pattern="[+\d\s\-()]+" id="modal-phone" required="">
+      </label>
+      <label aria-label="Ваш вопрос">
+        <textarea placeholder="Ваш вопрос" name="question"></textarea>
+      </label>
+      <button type="submit">Задать вопрос</button>
+      <div class="modal__checkbox-wrapper">
+        <input type="checkbox" name="agree" id="modal-agree">
+        <label for="modal-agree">Я согласен на обработку  персональных данных</label>
+      </div>
+    </form>
+  </div>
+</div>
+<script type="module" src="js/vendor.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: fade-out($dark, 0.2);
+  flex-direction: column;
+  justify-content: center;
+  color: $white;
+
+  &--open {
+    display: flex;
+  }
+}
+
+.modal__box {
+  box-sizing: border-box;
+  width: 490px;
+  padding: 33px 40px 36px;
+  background-color: $blue;
+  margin: auto;
+  position: relative;
+}
+
+.modal__close {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+  width: 17px;
+  height: 17px;
+  background-image: url("../img/close.svg");
+}
+
+.modal h2 {
+  @include font-roboto;
+  font-size: 28px;
+  line-height: 39px;
+  margin: 0 0 11px;
+}
+
+.modal p {
+  font-size: 16px;
+  line-height: 22px;
+  margin: 11px 0;
+}
+
+.modal__form label {
+  display: block;
+}
+
+.modal__form input {
+  display: block;
+  width: 100%;
+  height: 52px;
+  background-color: fade-out($white, 0.9);
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  padding: 14px 24px;
+  border: none;
+  margin: 30px 0;
+}
+
+.modal__form textarea {
+  display: block;
+  width: 100%;
+  background-color: fade-out($white, 0.9);
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+  padding: 14px 24px;
+  border: none;
+  height: 104px;
+  margin: 30px 0;
+}
+
+.modal__form input[type="checkbox"] {
+  display: none;
+}
+
+.modal__form button {
+  @include font-roboto;
+  display: block;
+  margin: 30px 0;
+  width: 100%;
+  height: 47px;
+  text-align: center;
+  border: 1px solid $white;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__checkbox-wrapper {
+  margin-top: 34px;
+}
+
+.modal__checkbox-wrapper label {
+  display: block;
+  padding-left: 49px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $white;
+  opacity: 0.8;
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $white;
+    top: 0;
+    left: 0;
+  }
+}
+
+.modal__form input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/check.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}

@@ -17,6 +17,6 @@ if (buttons && contents && buttons.length === contents.length) {
 
       button.classList.toggle('footer__section-button--open');
       contents[index].classList.toggle('footer__section-content--open');
-    })
+    });
   });
 }
