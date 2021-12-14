@@ -17,14 +17,15 @@ if (buttons && contents && buttons.length === contents.length) {
 
       button.classList.toggle('footer__section-button--open');
       contents[index].classList.toggle('footer__section-content--open');
-    })
+    });
   });
 }
 
-var phoneInput = document.querySelectorAll('[name=phone]');
+const phoneInput = document.querySelectorAll('[name=phone]');
 
 if (phoneInput) {
-  var im = new Inputmask("+7(999)999-99-99");
+  // eslint-disable-next-line no-undef
+  const im = new Inputmask('+7(999)999-99-99');
   im.mask(phoneInput);
 }
 
@@ -107,13 +108,12 @@ function openModal(element, params = {}) {
 
 const openButton = document.querySelector('.header__contacts-button');
 const modalWindow = document.querySelector('.modal');
-const modalForm = modalWindow.querySelector('.modal__form')
-let modal;
+const modalForm = modalWindow.querySelector('.modal__form');
 
 if (openButton && modalWindow && modalForm) {
   openButton.addEventListener('click', () => {
-    modal = openModal(modalWindow, {
-      closeButton: modalWindow.querySelector('.modal__close')
+    openModal(modalWindow, {
+      closeButton: modalWindow.querySelector('.modal__close'),
     });
     modalForm.name.focus();
   });

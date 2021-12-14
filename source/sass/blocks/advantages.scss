@@ -40,7 +40,7 @@
 
   @media (max-width: $max-tablet-width) {
     min-height: 232px;
-    padding: 24px 25px 21px;
+    padding: 24px 20px 19px 25px ;
     display: flex;
     flex-direction: column;
     width: calc(50% - 15px);
@@ -48,7 +48,7 @@
 
   @media (max-width: $max-mobile-width) {
     display: block;
-    padding: 25px 12px 20px 27px;
+    padding: 25px 12px 23px 24px;
     width: 100%;
     margin-bottom: 20px;
   }
@@ -56,10 +56,15 @@
 
 .advantages__icon-wrapper {
   height: 35px;
+
+  @media (max-width: $max-mobile-width) {
+    height: auto;
+  }
 }
 
 .advantages__icon {
   fill: $blue;
+  display: block;
 }
 
 .advantages__item:hover .advantages__icon {
@@ -68,8 +73,24 @@
 
 .advantages__item h3 {
   @include font-roboto;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.1em;
+  font-weight: normal;
   color: $blue;
-  margin: 23px 0 15px;
+  margin: 19px 0 15px;
+  white-space: nowrap;
+
+  @media (max-width: $max-tablet-width) {
+    margin: 6px 0 10px;
+  }
+
+  @media (max-width: $max-mobile-width) {
+    margin: 12px 0 9px;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
 }
 
 .advantages__item:hover h3 {

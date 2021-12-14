@@ -2,8 +2,8 @@
   background-color: $blue;
   background-image: url("../img/form-bg.png");
   background-repeat: no-repeat;
-  background-position: center 0;
-  padding: 96px 0 113px;
+  background-position: 106% -60px;
+  padding: 90px 0 113px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/form-bg@2x.jpg");
@@ -11,11 +11,11 @@
 
   @media (max-width: $max-tablet-width) {
     background-image: none;
-    padding: 83px 0 103px;
+    padding: 80px 0 103px;
   }
 
   @media (max-width: $max-mobile-width) {
-    padding: 33px 0 41px;
+    padding: 30px 0 41px;
   }
 }
 
@@ -44,6 +44,7 @@
   @include font-roboto;
   font-size: 36px;
   line-height: 51px;
+  font-weight: normal;
   color: $white;
   margin: 0;
 
@@ -62,10 +63,10 @@
   font-size: 16px;
   line-height: 22px;
   color: $white;
-  margin: 7px 0;
+  margin: 10px 0;
 
   @media (max-width: $max-tablet-width) {
-    margin: 15px 0;
+    margin: 16px 0;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -77,7 +78,11 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
-  margin-top: 49px;
+  margin-top: 50px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 55px;
+  }
 
   @media (max-width: $max-mobile-width) {
     margin-top: 23px;
@@ -152,28 +157,40 @@
   background-color: transparent;
   cursor: pointer;
 
+  @media (max-width: $max-tablet-width) {
+    margin-top: 47px;
+  }
+
   @media (max-width: $max-mobile-width) {
     margin-top: 30px;
   }
 }
 
 .form__checkbox-wrapper {
-  margin-top: 51px;
+  margin-top: 52px;
+
+  @media (max-width: $max-tablet-width) {
+    margin-top: 55px;
+  }
 
   @media (max-width: $max-mobile-width) {
-    margin-top: 30px;
+    margin-top: 33px;
   }
 }
 
 .form__checkbox-wrapper label {
   display: block;
-  padding-left: 39px;
+  padding-left: 40px;
   font-size: 14px;
   line-height: 16px;
   color: $white;
   opacity: 0.8;
   position: relative;
   cursor: pointer;
+
+  @media (max-width: $max-tablet-width) {
+    padding-left: 45px;
+  }
 
   @media (max-width: $max-mobile-width) {
     padding-left: 34px;
@@ -187,6 +204,10 @@
     border: 1px solid $white;
     top: 0;
     left: 7px;
+
+    @media (max-width: $max-tablet-width) {
+      left: 12px;
+    }
 
     @media (max-width: $max-mobile-width) {
       left: 0;

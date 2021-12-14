@@ -32,7 +32,7 @@
 }
 
 .header__wrapper {
-  @include center(1492px);
+  @include center(1464px);
   padding-left: 25px;
   padding-right: 25px;
 
@@ -51,14 +51,14 @@
   justify-content: space-between;
 }
 
-.header__logo {
-  margin-left: 4px;
-}
-
 .header__contacts {
   display: flex;
   justify-content: flex-end;
   padding-top: 4px;
+
+  @media (max-width: $max-mobile-width) {
+    padding-top: 6px;
+  }
 }
 
 .header__contacts-list {
@@ -87,7 +87,7 @@
 .header__contacts-link {
   display: block;
   position: relative;
-  padding-left: 39px;
+  padding-left: 34px;
   font-size: 16px;
   line-height: 18px;
   color: $white;
@@ -125,7 +125,7 @@
   &--phone::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -5px;
     left: 0;
     width: 18px;
     height: 18px;
@@ -143,7 +143,7 @@
   @include font-roboto;
   cursor: pointer;
   display: block;
-  margin-left: 38px;
+  margin-left: 51px;
   background-color: transparent;
   border: 1px solid $white;
   border-radius: 5px;
@@ -175,7 +175,7 @@
 .header__text h1 {
   @include font-roboto;
   margin-top: 231px;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
   font-weight: bold;
   font-size: 80px;
   line-height: 94px;
@@ -185,7 +185,7 @@
 
   @media (max-width: $max-tablet-width) {
     margin-top: 116px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
     padding-left: 63px;
     font-size: 60px;
     line-height: 70px;
@@ -194,7 +194,7 @@
 
   @media (max-width: $max-mobile-width) {
     margin-top: 231px;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
     padding-left: 0;
     max-width: 100%;
     font-size: 40px;
@@ -206,7 +206,7 @@
   font-size: 22px;
   line-height: 34px;
   color: $white;
-  padding-left: 98px;
+  padding-left: 94px;
   max-width: 780px;
   position: relative;
 
@@ -231,8 +231,8 @@
   width: 66px;
   height: 2px;
   background-color: $white;
-  top: 12px;
-  left: 4px;
+  top: 16px;
+  left: 0;
 
   @media (max-width: $max-tablet-width) {
     width: 33px;
@@ -248,8 +248,8 @@
   @include font-roboto;
   display: block;
   cursor: pointer;
-  margin-top: 37px;
-  margin-left: 98px;
+  margin-top: 43px;
+  margin-left: 94px;
   background-color: $blue;
   border: none;
   border-radius: 5px;
@@ -275,13 +275,13 @@
   }
 
   @media (max-width: $max-tablet-width) {
-    margin-top: 51px;
+    margin-top: 54px;
     width: 379px;
     margin-left: 114px;
   }
 
   @media (max-width: $max-mobile-width) {
-    margin-top: 42px;
+    margin-top: 40px;
     margin-left: 0;
     width: 100%;
   }

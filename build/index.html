@@ -7,8 +7,8 @@
   <meta name="description" content="Smart Device. Умные технологии. Печатные платы. Производство и монтаж, поставка комплектующих, блоков и модулей">
   <title>Smart Device. Умные технологии</title>
   <link rel="preload" href="fonts/PT-Mono_Regular.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/Robotocondensed.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/Robotocondensedbold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/roboto-condensed.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="preload" href="fonts/robotomedium.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -98,12 +98,17 @@
         </li>
       </ul>
     </section>
-    <section class="page__about about">
-      <h2>О компании</h2>
-      <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-      <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__text-mobile-hidden"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</span>.</p>
-      <a href="#" class="about__button">Подробнее</a>
-    </section>
+    <div class="page__about">
+      <section class="about">
+        <h2>О компании</h2>
+        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+          года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about__text-mobile-hidden"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</span>.
+        </p>
+        <a href="#" class="about__button">Подробнее</a>
+      </section>
+    </div>
   </div>
   <section class="products">
     <div class="products__wrapper">
@@ -147,7 +152,7 @@
           <button type="submit">Задать вопрос</button>
           <div class="form__checkbox-wrapper">
             <input type="checkbox" name="agree" id="agree">
-            <label for="agree">Я согласен на обработку  персональных данных</label>
+            <label for="agree">Я согласен на обработку персональных данных</label>
           </div>
         </form>
       </div>
@@ -157,7 +162,7 @@
 <footer class="footer page__footer">
   <div class="footer__wrapper">
     <div class="footer__info">
-      <a class="logo">
+      <a class="footer__logo logo">
         <svg class="logo__img" width="52" height="52">
           <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
         </svg>
@@ -274,7 +279,7 @@
       <button type="submit">Задать вопрос</button>
       <div class="modal__checkbox-wrapper">
         <input type="checkbox" name="agree" id="modal-agree">
-        <label for="modal-agree">Я согласен на обработку  персональных данных</label>
+        <label for="modal-agree">Я согласен на обработку персональных данных</label>
       </div>
     </form>
   </div>

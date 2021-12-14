@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 64px;
+  padding-top: 66px;
 
   @media (max-width: $max-tablet-width) {
     padding-top: 19px;
@@ -11,11 +11,11 @@
 }
 
 .footer__wrapper {
-  @include center(1486px);
+  @include center(1464px);
   padding-left: 25px;
   padding-right: 25px;
   display: grid;
-  grid-template-columns: 29% 1fr;
+  grid-template-columns: 421px 1fr;
 
   @media (max-width: $max-tablet-width) {
     display: block;
@@ -35,6 +35,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+
+.footer__logo {
+  @media (max-width: $max-mobile-width) {
+    margin-right: 14px;
   }
 }
 
@@ -100,20 +106,20 @@
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 337px;
+  grid-template-columns: 1fr 335px;
 
   @media (max-width: $max-tablet-width) {
     border-top: 1px solid $footer-border;
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 25px;
+    margin-top: 18px;
     padding-top: 38px;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
 
   @media (max-width: $max-mobile-width) {
-    margin-top: 38px;
+    margin-top: 33px;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
@@ -196,12 +202,12 @@
 }
 
 .footer__section-content {
-  margin-top: 29px;
+  margin-top: 25px;
 
   @media (max-width: $max-mobile-width) {
-    margin-top: 8px;
+    margin-top: 5px;
     display: none;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     margin-right: 3px;
 
     &--open {
@@ -216,6 +222,7 @@
 
 .footer__nav {
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $max-tablet-width) {
     display: block;
@@ -227,7 +234,7 @@
 }
 
 .footer__menu-item {
-  margin-right: 65px;
+  margin-right: 75px;
 }
 
 .footer__menu-link {
@@ -274,7 +281,7 @@
 }
 
 .footer__bottom {
-  margin-top: 55px;
+  margin-top: 45px;
   border-top: 1px solid $footer-border;
 
   @media (max-width: $max-tablet-width) {
@@ -287,7 +294,7 @@
 }
 
 .footer__bottom-wrapper {
-  @include center(1486px);
+  @include center(1464px);
   padding: 14px 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -322,7 +329,7 @@
 }
 
 .footer__rights {
-  margin-right: 59px;
+  margin-right: 74px;
 }
 
 .footer__conditions {

@@ -26,7 +26,8 @@
 
 .page__bg {
   background-image: url("../img/main-bg.png");
-  background-position-x: center;
+  background-position: center -28px;
+  background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/main-bg@2x.png");
@@ -34,6 +35,7 @@
 
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/main-bg_tablet.png");
+    background-position: 100% 90px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/main-bg_tablet@2x.png");
