@@ -1,22 +1,28 @@
 .about {
-  padding-top: 106px;
-  padding-bottom: 110px;
-  padding-left: 180px;
+  padding: 106px 25px 110px 205px;
   background-image: url("../img/2005.png");
-  background-position-x: -30px;
+  background-position-x: -5px;
   background-position-y: 111px;
   background-repeat: no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/2005@2x.jpg");
+  }
+
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/2005_tablet.png");
-    padding: 56px 0 84px 188px;
-    background-position-x: -25px;
+    padding: 56px 25px 84px 213px;
+    background-position-x: 0;
     background-position-y: 55px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/2005_tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $max-mobile-width) {
     background-image: none;
-    padding: 60px 0 65px;
+    padding: 60px 15px 65px 15px;
   }
 }
 

@@ -64,11 +64,4 @@
 
 .page__about {
   @include center(1220px);
-  padding-left: 25px;
-  padding-right: 25px;
-
-  @media (max-width: $max-mobile-width) {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }

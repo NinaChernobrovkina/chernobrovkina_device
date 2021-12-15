@@ -46,7 +46,7 @@ function openModal(element, params = {}) {
 
 const openButton = document.querySelector('.header__contacts-button');
 const modalWindow = document.querySelector('.modal');
-const modalForm = modalWindow.querySelector('.modal__form');
+const modalForm = modalWindow.querySelector('.modal__form form');
 
 if (openButton && modalWindow && modalForm) {
   openButton.addEventListener('click', () => {
