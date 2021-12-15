@@ -99,18 +99,16 @@
         </li>
       </ul>
     </section>
-    <div class="page__about">
-      <section class="about">
-        <h2>О компании</h2>
-        <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
-          года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
-        <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span
-            class="about__text-mobile-hidden"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</span>.
-        </p>
-        <a href="#" class="about__button">Подробнее</a>
-      </section>
-    </div>
+    <section class="about page__about">
+      <h2>О компании</h2>
+      <p>Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+        года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+      <p>Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
+        платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span
+          class="about__text-mobile-hidden"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</span>.
+      </p>
+      <a href="#" class="about__button">Подробнее</a>
+    </section>
   </div>
   <section class="products">
     <div class="products__wrapper">
@@ -139,24 +137,26 @@
       <div class="form__container">
         <h2>Остались вопросы? Задайте их нам!</h2>
         <p>Мы проконсультируем Вас бесплатно</p>
-        <form action="https://echo.htmlacademy.ru" class="form__form">
-          <label aria-label="Имя">
-            <input type="text" placeholder="Имя" name="name" required>
-          </label>
-          <label aria-label="Телефон">
-            <input type="tel" placeholder="Телефон" name="phone" pattern="[+\d\s\-()]+" id="phone" required>
-          </label>
-          <div class="form__wide">
-            <label aria-label="Ваш вопрос">
-              <textarea placeholder="Ваш вопрос" name="question" required></textarea>
+        <div class="form__form">
+          <form action="https://echo.htmlacademy.ru" class="">
+            <label aria-label="Имя">
+              <input type="text" placeholder="Имя" name="name" required>
             </label>
-          </div>
-          <button type="submit">Задать вопрос</button>
-          <div class="form__checkbox-wrapper">
-            <input type="checkbox" name="agree" id="agree">
-            <label for="agree">Я согласен на обработку персональных данных</label>
-          </div>
-        </form>
+            <label aria-label="Телефон">
+              <input type="tel" placeholder="Телефон" name="phone" pattern="[+\d\s\-()]+" id="phone" required>
+            </label>
+            <div class="form__wide">
+              <label aria-label="Ваш вопрос">
+                <textarea placeholder="Ваш вопрос" name="question" required></textarea>
+              </label>
+            </div>
+            <button type="submit">Задать вопрос</button>
+            <div class="form__checkbox-wrapper">
+              <input type="checkbox" name="agree" id="agree">
+              <label for="agree">Я согласен на обработку персональных данных</label>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
@@ -270,22 +270,24 @@
     <button class="modal__close" type="button" aria-label="Закрыть"></button>
     <h2>Закажите звонок</h2>
     <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-    <form action="https://echo.htmlacademy.ru" class="modal__form">
-      <label aria-label="Имя">
-        <input type="text" placeholder="Имя" name="name" required>
-      </label>
-      <label aria-label="Телефон">
-        <input type="tel" placeholder="Телефон" name="phone" pattern="[+\d\s\-()]+" id="modal-phone" required>
-      </label>
-      <label aria-label="Ваш вопрос">
-        <textarea placeholder="Ваш вопрос" name="question"></textarea>
-      </label>
-      <button type="submit">Задать вопрос</button>
-      <div class="modal__checkbox-wrapper">
-        <input type="checkbox" name="agree" id="modal-agree">
-        <label for="modal-agree">Я согласен на обработку персональных данных</label>
-      </div>
-    </form>
+    <div class="modal__form">
+      <form action="https://echo.htmlacademy.ru" class="">
+        <label aria-label="Имя">
+          <input type="text" placeholder="Имя" name="name" required>
+        </label>
+        <label aria-label="Телефон">
+          <input type="tel" placeholder="Телефон" name="phone" pattern="[+\d\s\-()]+" id="modal-phone" required>
+        </label>
+        <label aria-label="Ваш вопрос">
+          <textarea placeholder="Ваш вопрос" name="question"></textarea>
+        </label>
+        <button type="submit">Задать вопрос</button>
+        <div class="modal__checkbox-wrapper">
+          <input type="checkbox" name="agree" id="modal-agree">
+          <label for="modal-agree">Я согласен на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 <script type="module" src="js/vendor.js"></script>
