@@ -2,11 +2,12 @@
   background-color: $blue;
   background-image: url("../img/form-bg.png");
   background-repeat: no-repeat;
-  background-position: 167px -60px;
+  background-position: calc(47.66vw - 748px) -60px;
   padding: 90px 0 113px;
+  background-size: 1745px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/form-bg@2x.jpg");
+    background-image: url("../img/form-bg@2x.png");
   }
 
   @media (max-width: $max-tablet-width) {
@@ -137,6 +138,7 @@
   margin-top: 40px;
   border: none;
   height: 154px;
+  resize: none;
 
   @media (max-width: $max-tablet-width) {
     height: 160px;
@@ -172,6 +174,16 @@
   color: $white;
   background-color: transparent;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $white;
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $max-tablet-width) {
     margin-top: 47px;

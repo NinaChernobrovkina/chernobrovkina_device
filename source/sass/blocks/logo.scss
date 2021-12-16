@@ -1,47 +1,21 @@
-.logo {
-  display: flex;
-}
-
 .logo__img {
-  width: 52px;
+  width: 202px;
   height: 52px;
 
   &--mobile {
     @media (max-width: $max-mobile-width) {
-      width: 38px;
+      width: auto;
       height: 38px;
     }
   }
 }
 
 .logo__text {
-  margin-left: 16px;
-  padding-top: 6px;
-
-  &--mobile {
-    @media (max-width: $max-mobile-width) {
-      display: none;
-    }
+  @media (max-width: $max-mobile-width) {
+    display: none;
   }
 }
 
 .logo__name {
-  @include font-roboto;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 30px;
-  color: $white;
-
-  &--dark {
-    color: $logo-name;
-  }
-}
-
-.logo__desc {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-
-  color: $logo-desc;
+  fill: $logo-name;
 }

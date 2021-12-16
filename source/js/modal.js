@@ -4,9 +4,11 @@ function isEscEvent(evt) {
 
 function openModal(element, params = {}) {
   element.classList.add('modal--open');
+  document.body.classList.add('page__body--no-scroll');
 
   function closeModal() {
     element.classList.remove('modal--open');
+    document.body.classList.remove('page__body--no-scroll');
     // eslint-disable-next-line no-use-before-define
     document.removeEventListener('keydown', onModalEscKeydown);
     // eslint-disable-next-line no-use-before-define

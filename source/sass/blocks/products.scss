@@ -78,6 +78,16 @@
   background-position-x: center;
   padding: 49px 44px;
   position: relative;
+  background-size: 370px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $max-tablet-width) {
     padding: 40px 44px;

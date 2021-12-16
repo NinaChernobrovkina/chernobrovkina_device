@@ -4,19 +4,21 @@
   background-position-x: -5px;
   background-position-y: 111px;
   background-repeat: no-repeat;
+  background-size: 220px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/2005@2x.jpg");
+    background-image: url("../img/2005@2x.png");
   }
 
   @media (max-width: $max-tablet-width) {
     background-image: url("../img/2005_tablet.png");
+    background-size: 244px;
     padding: 56px 25px 84px 213px;
     background-position-x: 0;
     background-position-y: 55px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/2005_tablet@2x.jpg");
+      background-image: url("../img/2005_tablet@2x.png");
     }
   }
 
@@ -82,6 +84,16 @@
   color: $blue;
   padding: 13px;
   width: 180px;
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 
   @media (max-width: $max-tablet-width) {
     margin-top: 41px;
