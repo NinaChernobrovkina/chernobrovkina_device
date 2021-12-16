@@ -38,10 +38,10 @@
   }
 
   @media (max-width: $max-mobile-width) {
+    padding-left: 10px;
     font-size: 28px;
     line-height: 39px;
     margin: 0 0 42px;
-    letter-spacing: -1px;
   }
 }
 
@@ -51,6 +51,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
+  row-gap: 30px;
 
   @media (max-width: $max-tablet-width) {
     display: block;
@@ -157,5 +158,5 @@
   font-size: 20px;
   line-height: 30px;
   color: $white;
-  width: 180px;
+  width: 173px;
 }
