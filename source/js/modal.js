@@ -15,8 +15,17 @@ function openModal(element, params = {}) {
     params.closeButton.removeEventListener('click', onModalClickClose);
     // eslint-disable-next-line no-use-before-define
     element.removeEventListener('click', onModalClickOverlay);
+    // eslint-disable-next-line no-use-before-define
+    document.removeEventListener('focusin', onFocus);
+
     if (params.afterClose) {
       params.afterClose();
+    }
+  }
+
+  function onFocus(evt) {
+    if (!element.contains(evt.target)) {
+      element.querySelector('input, button, a').focus();
     }
   }
 
@@ -40,6 +49,7 @@ function openModal(element, params = {}) {
   document.addEventListener('keydown', onModalEscKeydown);
   params.closeButton.addEventListener('click', onModalClickClose);
   element.addEventListener('click', onModalClickOverlay);
+  document.addEventListener('focusin', onFocus);
 
   return {
     closeModal: closeModal,
