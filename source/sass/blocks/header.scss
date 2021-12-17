@@ -6,7 +6,6 @@
   padding-top: 33px;
   padding-bottom: 275px;
   background-size: 1920px;
-  background-repeat: no-repeat;
 
   @media (max-width: $break-desktop-width) {
     background-position: 40% 0;
@@ -188,7 +187,7 @@
 
 .header__text h1 {
   @include font-roboto;
-  margin-top: 231px;
+  margin-top: 224px;
   margin-bottom: 27px;
   font-weight: bold;
   font-size: 80px;
